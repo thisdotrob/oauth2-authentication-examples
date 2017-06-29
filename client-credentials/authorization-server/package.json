@@ -1,0 +1,23 @@
+{
+  "name": "authorization-code-example-authorization-server",
+  "description": "A NodeJS authorization server for authenticating with the 'authoriation code' OAuth2 grant",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-oauth-server": "^2.0.0-b1",
+    "express-session": "^1.15.3",
+    "oauth2-server": "^2.4.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.4.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "style-check": "prettier '**/*.js' --list-different --single-quote --trailing-comma all",
+    "style-fix": "prettier '**/*.js' --write --single-quote --trailing-comma all"
+  }
+}

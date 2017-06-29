@@ -1,0 +1,12 @@
+{
+  "name": "authorization-code-example",
+  "description": "A NodeJS implementation of the OAuth2 'authorization code' grant",
+  "scripts": {
+    "start": "concurrently \"cd authorization-server && npm start\" \"cd client && npm start\"",
+    "install": "concurrently \"cd authorization-server && npm install\" \"cd client && npm install\""
+  },
+  "dependencies": {
+    "authorization-code-example-client": "file:client",
+    "concurrently": "^3.4.0"
+  }
+}
